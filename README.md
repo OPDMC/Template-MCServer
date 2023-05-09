@@ -1,7 +1,7 @@
 <div align="center">
-	<img (templateeee) src="https://github.com/OPDMC/template_mc-server/raw/main/%23README/icon.png" width="20%"/>
-    <h1>(templateeee)template_mc-server <code>v1.0</code></h1>
-	<a (templateeee) href='https://github.com/OPDMC/template_mc-server'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
+	<img (templateeee) src="https://github.com/OPDMC/Template-MCServer/raw/main/%23README/icon.png" width="20%"/>
+    <h1>(templateeee)Template-MCServer <code>v1.0</code></h1>
+	<a (templateeee) href='https://github.com/OPDMC/Template-MCServer'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
 	<a (templateeee) href=''><img src="https://img.shields.io/badge/-Quay.io-ee0000?style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io">
 	<a (templateeee) href=''><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a></a>
     </tr>
