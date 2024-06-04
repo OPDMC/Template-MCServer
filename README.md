@@ -1,3 +1,7 @@
+> [!IMPORTANT]
+> By using this project, you acknowledge and agree that the Minecraft EULA is automatically set to TRUE: [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula).
+> 使用本项目即表示您承认并同意 Minecraft EULA 已自动设置为 TRUE：[Minecraft EULA](https://account.mojang.com/documents/minecraft_eula)。
+
 <div align="center">
 	<img §§template§§ src="https://github.com/OPDMC/Template-MCServer/raw/main/docs/%23README/icon.png" width="20%"/>
     <h1>§§template§§Template-MCServer <code>v1.0</code></h1>
@@ -10,7 +14,9 @@
 
 ## 1 §§template§§Description
 
-§§template§§所有以 `§§template§§` 开头的内容都是模板，需要在使用时替换。Everything starting with `§§template§§` is a template and needs to be replaced when used.
+§§template§§所有以 `§§template§§` 开头的内容都是模板，需要在使用时替换。
+
+Everything starting with `§§template§§` is a template and needs to be replaced when used.
 
 ### 1.1 Update Rule
 
@@ -44,5 +50,9 @@ docker run -d \
 
 
 ## 4 License
+
+By using this project, you agree to the Minecraft End User License Agreement (EULA). The EULA can be found at the following link: [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula).  This project automatically sets the EULA to true in the Minecraft configuration. By continuing to use this project, you acknowledge that you have read, understood, and agreed to the terms of the Minecraft EULA.
+
+使用本项目即表示您同意《Minecraft 最终用户许可协议》（EULA）。EULA 可通过以下链接查看：[Minecraft EULA](https://account.mojang.com/documents/minecraft_eula)。 本项目会自动在 Minecraft 配置中将 EULA 设置为 true。继续使用本项目即表示您已阅读、理解并同意 Minecraft EULA 的条款。
 
 Apache License 2.0
