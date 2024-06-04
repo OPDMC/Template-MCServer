@@ -57,7 +57,6 @@ docker run -d \
 - **Fabric**
   - https://fabricmc.net/
 
-
 ## 4 License
 
 By using this project, you agree to the Minecraft End User License Agreement (EULA). The EULA can be found at the following link: [Minecraft EULA](https://account.mojang.com/documents/minecraft_eula).  This project automatically sets the EULA to true in the Minecraft configuration. By continuing to use this project, you acknowledge that you have read, understood, and agreed to the terms of the Minecraft EULA.
