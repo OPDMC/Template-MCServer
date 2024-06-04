@@ -5,10 +5,10 @@
 
 <div align="center">
 	<img §§template§§ src="https://github.com/OPDMC/Template-MCServer/raw/main/docs/%23README/icon.png" width="20%"/>
-    <h1>§§template§§Template-MCServer <code>v1.0</code></h1>
+    <h1>§§template§§Template-MCServer <code>v2.0</code></h1>
 	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
 	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer/pkgs/container/template-mcserver'><img src="https://img.shields.io/badge/-Ghcr.io-8957E5?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
-	<a §§template§§ href=''><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
+	<a §§template§§ href='https://hub.docker.com/r/opdmc/template-mcserver'><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
     </tr>
 </div>
 
@@ -34,15 +34,17 @@ Version numbers are represented as `vA.B` (eg: `v1.0`, `v1.1`, `v2.0`), where ch
 ## 2 Usage
 
 ```shell
-docker pull §§template§§opdmc/1.19.4-opdmc
+#§§template§§
+docker pull opdmc/template-mcserver
 ```
 
 ```shell
+#§§template§§
 docker run -d \
-  §§template§§--name=1.19.4-opdmc \
+  --name=template-mcserver \
   -p 127.0.0.1:80:25565/tcp \
   -v /path/to/store/data:/minecraft \
-  §§template§§opdmc/1.19.4-opdmc
+  opdmc/template-mcserver
 ```
 
 | Parameter                             | Function                                                        |                                  |
