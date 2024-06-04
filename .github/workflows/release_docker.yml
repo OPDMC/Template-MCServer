@@ -1,0 +1,90 @@
+name: Build Docker for Release
+
+# Org Secrets:
+# - GHCR_USERNAME: GitHub Container Registry username (organization name)
+# - GH_USERNAME: GitHub username (an organization admin)
+# - GH_TOKEN: GitHub Container Registry token (PAT from an organization admin)
+# - QUAY_USERNAME: Quay.io username
+# - QUAY_PASSWORD: Quay.io password
+# - DOCKERHUB_LOGINNAME: Docker Hub login username
+# - DOCKERHUB_PASSWORD: Docker Hub password
+# - DOCKERHUB_ORGNAME: Docker Hub organization name
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  release-docker-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+        with:
+          platforms: all
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+        with:
+          install: true
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v2
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GHCR_USERNAME }}
+          password: ${{ secrets.GH_TOKEN }}
+
+      - name: Login to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          registry: docker.io
+          username: ${{ secrets.DOCKERHUB_LOGINNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+
+      - name: Build and push Docker Images
+        run: |
+          IMAGE_NAME=$(basename ${{ github.repository }})
+          IMAGE_NAME=$(echo $IMAGE_NAME | tr '[:upper:]' '[:lower:]')
+          OWNER=$(echo ${{ github.repository_owner }} | tr '[:upper:]' '[:lower:]')
+          TAG=$(echo ${{ github.event.release.tag_name }} | tr '[:upper:]' '[:lower:]')
+          docker buildx create --use
+          docker buildx inspect --bootstrap
+          docker buildx build --platform linux/amd64,linux/arm64 --push -t ghcr.io/${OWNER}/${IMAGE_NAME}:${TAG} -t ghcr.io/${OWNER}/${IMAGE_NAME}:latest .
+          docker buildx build --platform linux/amd64,linux/arm64 --push -t ${{ secrets.DOCKERHUB_ORGNAME }}/${IMAGE_NAME}:${TAG} -t ${{ secrets.DOCKERHUB_ORGNAME }}/${IMAGE_NAME}:latest .
+
+      - name: Export Docker images to tar files
+        run: |
+          IMAGE_NAME=$(basename ${{ github.repository }})
+          IMAGE_NAME=$(echo $IMAGE_NAME | tr '[:upper:]' '[:lower:]')
+          TAG=$(echo ${{ github.event.release.tag_name }} | tr '[:upper:]' '[:lower:]')
+          ARCHS="amd64 arm64"
+          for ARCH in $ARCHS; do
+            FILE_NAME=docker-img_${IMAGE_NAME}_${TAG}_${ARCH}.tar
+            docker pull --platform linux/$ARCH ${{ secrets.DOCKERHUB_ORGNAME }}/${IMAGE_NAME}:${TAG}
+            docker save -o $FILE_NAME ${{ secrets.DOCKERHUB_ORGNAME }}/${IMAGE_NAME}:${TAG}
+            echo "FILE_NAME_$ARCH=$FILE_NAME" >> $GITHUB_ENV
+          done
+
+      - name: Upload Docker image tar (amd64) to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ env.FILE_NAME_amd64 }}
+          asset_name: ${{ env.FILE_NAME_amd64 }}
+          asset_content_type: application/x-tar
+
+      - name: Upload Docker image tar (arm64) to release
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+        with:
+          upload_url: ${{ github.event.release.upload_url }}
+          asset_path: ${{ env.FILE_NAME_arm64 }}
+          asset_name: ${{ env.FILE_NAME_arm64 }}
+          asset_content_type: application/x-tar
