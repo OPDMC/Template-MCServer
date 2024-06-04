@@ -1,16 +1,16 @@
 <div align="center">
-	<img (templateeee) src="https://github.com/OPDMC/Template-MCServer/raw/main/docs/%23README/icon.png" width="20%"/>
-    <h1>(templateeee)Template-MCServer <code>v1.0</code></h1>
-	<a (templateeee) href='https://github.com/OPDMC/Template-MCServer'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
-	<a (templateeee) href=''><img src="https://img.shields.io/badge/-Quay.io-ee0000?style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io"></a>
-	<a (templateeee) href=''><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
+	<img §§template§§ src="https://github.com/OPDMC/Template-MCServer/raw/main/docs/%23README/icon.png" width="20%"/>
+    <h1>§§template§§Template-MCServer <code>v1.0</code></h1>
+	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
+	<a §§template§§ href=''><img src="https://img.shields.io/badge/-Quay.io-ee0000?style=flat&amp;logo=RedHat&amp;logoColor=white" referrerpolicy="no-referrer" alt="Quay.io"></a>
+	<a §§template§§ href=''><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
     </tr>
 </div>
 
 
-## 1 (templateeee)Description
+## 1 §§template§§Description
 
-(templateeee)所有以 `(templateeee)` 开头的内容都是模板，需要在使用时替换。Everything starting with `(templateeee)` is a template and needs to be replaced when used.
+§§template§§所有以 `§§template§§` 开头的内容都是模板，需要在使用时替换。Everything starting with `§§template§§` is a template and needs to be replaced when used.
 
 ### 1.1 Update Rule
 
@@ -21,15 +21,15 @@ Version numbers are represented as `vA.B` (eg: `v1.0`, `v1.1`, `v2.0`), where ch
 ## 2 Usage
 
 ```shell
-docker pull (templateeee)opdmc/1.19.4-opdmc
+docker pull §§template§§opdmc/1.19.4-opdmc
 ```
 
 ```shell
 docker run -d \
-  (templateeee)--name=1.19.4-opdmc \
+  §§template§§--name=1.19.4-opdmc \
   -p 127.0.0.1:80:25565/tcp \
   -v /path/to/store/data:/minecraft \
-  (templateeee)opdmc/1.19.4-opdmc
+  §§template§§opdmc/1.19.4-opdmc
 ```
 
 | Parameter                             | Function                                                        |                                  |
@@ -37,7 +37,7 @@ docker run -d \
 | `-p 127.0.0.1:80:25565/tcp`           | Minecraft server port                                           | MC服务器端口                          |
 | `-v /path/to/store/data:/minecraft`   | To store data in local, auto initialize if `start.sh` NOT exist | 服务器文件映射路径, `start.sh` 存在时将不进行初始化 |
 
-## 3 (templateeee)Reference
+## 3 §§template§§Reference
 
 - **Fabric**
   - https://fabricmc.net/

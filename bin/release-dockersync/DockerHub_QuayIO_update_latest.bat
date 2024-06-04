@@ -1,5 +1,5 @@
 @echo off
-set repo=(templateeee)opdmc/1.19.4-opdmc
+set repo=§§template§§opdmc/1.19.4-opdmc
 set /p tag=" Tag to latest > "
 docker tag %repo%:%tag% %repo%:latest
 docker push %repo%:latest

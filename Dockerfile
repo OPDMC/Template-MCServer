@@ -1,4 +1,4 @@
-FROM openjdk:(templateeee)17-bullseye
+FROM openjdk:§§template§§17-bullseye
 ENV EULA=TRUE
 WORKDIR /minecraft
 COPY ./minecraft_server /docker_init
