@@ -7,8 +7,8 @@
 	<img §§template§§ src="https://github.com/OPDMC/Template-MCServer/raw/main/docs/%23README/icon.png" width="20%"/>
     <h1>§§template§§Template-MCServer <code>v2.0</code></h1>
 	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
-	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer/pkgs/container/template-mcserver'><img src="https://img.shields.io/badge/-Ghcr.io-8957E5?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
-	<a §§template§§ href='https://hub.docker.com/r/opdmc/template-mcserver'><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
+	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer/pkgs/container/template-mcserver'><img src="https://img.shields.io/badge/Ghcr.io-v2.0-555555?labelColor=8957E5&style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
+	<a §§template§§ href='https://hub.docker.com/r/opdmc/template-mcserver'><img src="https://img.shields.io/badge/DockerHub-v2.0-555555?labelColor=1c90ed&style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
     </tr>
 </div>
 
@@ -19,9 +19,9 @@
 
 §§template§§Everything starting with `§§template§§` is a template and needs to be replaced when used.
 
-整合的插件/模组作者在下方的 `3 Reference` 中注明了，请尊重原作者版权。
+这是OPDMC群友自用的Docker化MC服务器。整合的插件/模组作者在下方的 `3 Reference` 中注明了，请尊重原作者版权。
 
-The authors of the integrated plugins/mods are credited in the `3 Reference` section below. Please respect the original authors' copyrights.
+This is a Dockerized Minecraft server for personal use by OPDMC group members. The authors of the integrated plugins/mods are credited in the `3 Reference` section below. Please respect the original authors' copyrights.
 
 ### 1.1 Update Rule
 
@@ -34,8 +34,10 @@ Version numbers are represented as `vA.B` (eg: `v1.0`, `v1.1`, `v2.0`), where ch
 ## 2 Usage
 
 ```shell
-#§§template§§
-docker pull opdmc/template-mcserver
+# DockerHub §§template§§
+docker pull opdmc/template-mcserver:latest
+# Ghcr.io §§template§§
+docker pull ghcr.io/opdmc/template-mcserver:latest
 ```
 
 ```shell
