@@ -9,6 +9,8 @@
 	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer'><img src="https://img.shields.io/badge/-GitHub-3A3A3A?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="GitHub"></a>
 	<a §§template§§ href='https://github.com/OPDMC/Template-MCServer/pkgs/container/template-mcserver'><img src="https://img.shields.io/badge/Ghcr.io-v2.1-555555?labelColor=8957E5&style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
 	<a §§template§§ href='https://hub.docker.com/r/opdmc/template-mcserver'><img src="https://img.shields.io/badge/DockerHub-v2.1-555555?labelColor=1c90ed&style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a>
+
+![Docker Image Size §§template§§](https://img.shields.io/docker/image-size/opdmc/template-mcserver?arch=amd64&label=AMD64&color=006688) ![Docker Image Size §§template§§](https://img.shields.io/docker/image-size/opdmc/template-mcserver?arch=arm64&label=ARM64&color=008866)
     </tr>
 </div>
 
