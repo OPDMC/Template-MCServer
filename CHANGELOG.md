@@ -1,9 +1,8 @@
 §§template§§§§template§§§§template§§
 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=amd64&label=v2.1-amd64&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=arm64&label=v2.1-arm64&color=008866)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=amd64&label=AMD64%20v2.1&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=arm64&label=ARM64%20v2.1&color=008866)
 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=amd64&label=v2.0-amd64&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=arm64&label=v2.0-arm64&color=008866)
-
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=amd64&label=AMD64%20v2.0&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=arm64&label=ARM64%20v2.0&color=008866)
 
 ---
 
@@ -16,9 +15,9 @@
 
 <a href='https://hub.docker.com/r/opdmc/template-mcserver'><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a> <a href='https://github.com/OPDMC/Template-MCServer/pkgs/container/template-mcserver'><img src="https://img.shields.io/badge/-Ghcr.io-8957E5?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=amd64&label=v2.1-amd64&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=arm64&label=v2.1-arm64&color=008866)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=amd64&label=AMD64%20v2.1&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.1?arch=arm64&label=ARM64%20v2.1&color=008866)
 
-### Install
+### Usage
 
 ```shell
 # DockerHub
@@ -48,9 +47,9 @@ docker run -d \
 
 <a href='https://hub.docker.com/r/opdmc/template-mcserver'><img src="https://img.shields.io/badge/-DockerHub-1c90ed?style=flat&amp;logo=Docker&amp;logoColor=white" referrerpolicy="no-referrer" alt="DockerHub"></a> <a href='https://github.com/OPDMC/Template-MCServer/pkgs/container/template-mcserver'><img src="https://img.shields.io/badge/-Ghcr.io-8957E5?style=flat&amp;logo=GitHub&amp;logoColor=white" referrerpolicy="no-referrer" alt="Ghcr.io"></a>
 
-![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=amd64&label=v2.0-amd64&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=arm64&label=v2.0-arm64&color=008866)
+![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=amd64&label=AMD64%20v2.0&color=006688) ![Docker Image Size (tag)](https://img.shields.io/docker/image-size/opdmc/template-mcserver/v2.0?arch=arm64&label=ARM64%20v2.0&color=008866)
 
-### Install
+### Usage
 
 ```shell
 # DockerHub
