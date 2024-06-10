@@ -1,4 +1,4 @@
 set /p name=" Set docker name > "
-set /p f_hash=" æ¨±èŠ±Frpé…ç½®æ–‡ä»¶ä¸­çš„å“ˆå¸Œå€¼ (ä¾‹å¦‚`-f 21c05a0db98fb91d:7795884`ä¸­â€œ-fâ€ä¹‹åŽçš„éƒ¨åˆ†ï¼Œä¸éœ€è¦ç©ºæ ¼) > "
+set /p f_hash=" Ó£»¨FrpÅäÖÃÎÄ¼þÖÐµÄ¹þÏ£Öµ (ÀýÈç`-f 21c05a0db98fb91d:7795884`ÖÐ¡°-f¡±Ö®ºóµÄ²¿·Ö£¬²»ÐèÒª¿Õ¸ñ) > "
 docker run -d --restart=always --pull=always --name=%name%  natfrp/frpc -f %f_hash%
 pause
