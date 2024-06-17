@@ -63,7 +63,7 @@ jobs:
           TAG=$(echo ${{ github.event.release.tag_name }} | tr '[:upper:]' '[:lower:]')
           ARCHS="amd64 arm64"
           for ARCH in $ARCHS; do
-            FILE_NAME=docker-img_${IMAGE_NAME}_${TAG}_${ARCH}.tar
+            FILE_NAME=docker-img_${IMAGE_NAME}_${TAG}_linux-${ARCH}.tar
             docker pull --platform linux/$ARCH ${{ secrets.DOCKERHUB_ORGNAME }}/${IMAGE_NAME}:${TAG}
             docker save -o $FILE_NAME ${{ secrets.DOCKERHUB_ORGNAME }}/${IMAGE_NAME}:${TAG}
             echo "FILE_NAME_$ARCH=$FILE_NAME" >> $GITHUB_ENV

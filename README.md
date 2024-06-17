@@ -45,7 +45,7 @@ docker pull ghcr.io/opdmc/template-mcserver:latest
 #§§template§§
 docker run -it \
   --name=template-mcserver \
-  -p 127.0.0.1:80:25565/tcp \
+  -p 127.0.0.1:8080:25565/tcp \
   -v /path/to/store/data:/minecraft \
   opdmc/template-mcserver
 ```
